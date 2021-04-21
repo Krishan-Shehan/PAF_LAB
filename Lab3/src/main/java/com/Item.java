@@ -24,7 +24,7 @@ public class Item {
 		try {
 			Connection con = connect();
 			if (con == null) {
-				return "Error while connecting to the database";
+				return "Error while connecting to the database ";
 			}
 			// create a prepared statement
 			String query = " insert into item (`itemId`,`itemCode`,`itemName`,`itemPrice`,`itemDesc`)"
